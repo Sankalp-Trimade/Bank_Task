@@ -1,0 +1,236 @@
+[
+    {
+        "id": "HDF20250415",
+        "name": "HDFC Bank",
+        "branch_code": "HD0001",
+        "ifsc_code": "HDFC001",
+        "address": "Madhapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500081",
+        "phone": "9876543210",
+        "created_at": "2025-04-15 14:30:38",
+        "is_active": true,
+        "charges_same_bank": {
+            "RTGS": "0%",
+            "IMPS": "5%"
+        },
+        "charges_other_bank": {
+            "RTGS": "2%",
+            "IMPS": "6%"
+        },
+        "accepted_currency": "INR",
+        "staff": [
+            {
+                "id": "SANHDF0415",
+                "name": "Sankalp Trimade",
+                "email": "sankalp@gmail.com",
+                "username": "sankalp",
+                "password": "password",
+                "role": "Manager",
+                "created_at": "2025-04-15 14:45:52"
+            }
+        ],
+        "accounts": [
+            {
+                "id": "SAN0415",
+                "name": "Sanjiv Shinde",
+                "email": "sanjiv@gmail.com",
+                "username": "sanjiv",
+                "password": "password",
+                "balance": 5000.0,
+                "created_at": "2025-04-15 17:27:16"
+            },
+            {
+                "id": "ADI0416",
+                "name": "Aditya Pahade",
+                "email": "aditya@gmail.com",
+                "username": "aditya",
+                "password": "password",
+                "balance": 5000.0,
+                "created_at": "2025-04-16 11:59:29"
+            }
+        ],
+        "transactions": [
+            {
+                "txn_id": "TXNAXI20250415VIR04160416155057",
+                "type": "transfer",
+                "sender": "virat",
+                "receiver": "sanjiv",
+                "amount": 500.0,
+                "currency": "INR",
+                "charge": 30.0,
+                "transfer_type": "IMPS",
+                "timestamp": "2025-04-16 15:50:57"
+            },
+            {
+                "txn_id": "TXNHDF20250415SAN04150416160304",
+                "username": "sanjiv",
+                "type": "revert_receive_transfer",
+                "amount": 500.0,
+                "timestamp": "2025-04-16 16:03:04",
+                "balance": 5000.0,
+                "note": "Transfer from virat was reverted."
+            },
+            {
+                "txn_id": "TXNHDF20250415ADI04160416164426",
+                "type": "transfer",
+                "sender": "aditya",
+                "receiver": "sanjiv",
+                "amount": 300.0,
+                "currency": "INR",
+                "charge": 15.0,
+                "transfer_type": "IMPS",
+                "timestamp": "2025-04-16 16:44:26"
+            },
+            {
+                "txn_id": "TXNHDF20250415ADI04160416164459",
+                "type": "transfer",
+                "sender": "aditya",
+                "receiver": "shreyas",
+                "amount": 500.0,
+                "currency": "INR",
+                "charge": 30.0,
+                "transfer_type": "IMPS",
+                "timestamp": "2025-04-16 16:44:59"
+            },
+            {
+                "txn_id": "TXNHDF20250415ADI04160416164652",
+                "username": "aditya",
+                "type": "revert_transfer",
+                "amount": 300.0,
+                "timestamp": "2025-04-16 16:46:52",
+                "balance": 4470.0,
+                "note": "Reverted a transfer to sanjiv."
+            },
+            {
+                "txn_id": "TXNHDF20250415ADI04160416164715",
+                "username": "aditya",
+                "type": "revert_transfer",
+                "amount": 500.0,
+                "timestamp": "2025-04-16 16:47:15",
+                "balance": 5000.0,
+                "note": "Reverted a transfer to shreyas."
+            }
+        ],
+        "currencies": {
+            "USD": 86.77,
+            "EUR": 67.7
+        }
+    },
+    {
+        "id": "AXI20250415",
+        "name": "AXIS Bank",
+        "branch_code": "AX0001",
+        "ifsc_code": "AXIS001",
+        "address": "Madhapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500081",
+        "phone": "9876543210",
+        "created_at": "2025-04-15 14:31:16",
+        "is_active": true,
+        "charges_same_bank": {
+            "RTGS": "0%",
+            "IMPS": "5%"
+        },
+        "charges_other_bank": {
+            "RTGS": "2%",
+            "IMPS": "6%"
+        },
+        "accepted_currency": "INR",
+        "staff": [
+            {
+                "id": "SHIAXI0415",
+                "name": "Shiv Ainwad",
+                "email": "shiv@gmail.com",
+                "username": "shiv",
+                "password": "password",
+                "role": "Manager",
+                "created_at": "2025-04-15 14:46:43"
+            }
+        ],
+        "accounts": [
+            {
+                "id": "VIR0416",
+                "name": "Virat Kohli",
+                "email": "virat@gmail.com",
+                "username": "virat",
+                "password": "password",
+                "balance": 4170.0,
+                "created_at": "2025-04-16 15:11:46"
+            },
+            {
+                "id": "SHR0416",
+                "name": "Shreyas Iyer",
+                "email": "shreyas@gmail.com",
+                "username": "shreyas",
+                "password": "password",
+                "balance": 5300.0,
+                "created_at": "2025-04-16 15:12:08"
+            }
+        ],
+        "transactions": [
+            {
+                "txn_id": "TXNAXI20250415VIR04160416155030",
+                "type": "transfer",
+                "sender": "virat",
+                "receiver": "shreyas",
+                "amount": 300.0,
+                "currency": "INR",
+                "charge": 0.0,
+                "transfer_type": "RTGS",
+                "timestamp": "2025-04-16 15:50:30"
+            },
+            {
+                "txn_id": "TXNAXI20250415VIR04160416155057",
+                "type": "transfer",
+                "sender": "virat",
+                "receiver": "sanjiv",
+                "amount": 500.0,
+                "currency": "INR",
+                "charge": 30.0,
+                "transfer_type": "IMPS",
+                "timestamp": "2025-04-16 15:50:57"
+            },
+            {
+                "txn_id": "TXNAXI20250415VIR04160416160304",
+                "username": "virat",
+                "type": "revert_transfer",
+                "amount": 500.0,
+                "timestamp": "2025-04-16 16:03:04",
+                "balance": 4700.0,
+                "note": "Reverted a transfer to sanjiv."
+            },
+            {
+                "txn_id": "TXNAXI20250415VIR04160416160613",
+                "username": "virat",
+                "type": "revert_transfer",
+                "amount": 300.0,
+                "timestamp": "2025-04-16 16:06:13",
+                "balance": 4470.0,
+                "note": "Reverted a transfer to shreyas."
+            },
+            {
+                "txn_id": "TXNHDF20250415ADI04160416164459",
+                "type": "transfer",
+                "sender": "aditya",
+                "receiver": "shreyas",
+                "amount": 500.0,
+                "currency": "INR",
+                "charge": 30.0,
+                "transfer_type": "IMPS",
+                "timestamp": "2025-04-16 16:44:59"
+            },
+            {
+                "txn_id": "TXNAXI20250415SHR04160416164715",
+                "username": "shreyas",
+                "type": "revert_receive_transfer",
+                "amount": 500.0,
+                "timestamp": "2025-04-16 16:47:15",
+                "balance": 5300.0,
+                "note": "Transfer from aditya was reverted."
+            }
+        ]
+    }
+]
